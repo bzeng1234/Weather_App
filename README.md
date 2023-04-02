@@ -2,7 +2,7 @@
 
 ## NPM Install
 
-Run `npm install package.json` to download the required packages for development and production.
+Run `npm install` to download the required packages for development and production.
 
 ## API Key
 
