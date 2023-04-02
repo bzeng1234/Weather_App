@@ -1,1 +1,1 @@
-console.log(process.env.WEATHER_API_KEY);
+console.log("hello");
