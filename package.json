@@ -12,6 +12,7 @@
   "author": "Brandon Zeng",
   "license": "ISC",
   "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1"
   }
