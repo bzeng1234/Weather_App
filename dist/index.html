@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+    </style>
 </head>
 <body>
     <script src="main.js" defer></script>
     <div class="container">
         <form method="#">
-            <input type="text" id="city" name="city">
+            <input type="text" id="city" name="city" placeholder="City or Zipcode">
             <button type="button" id="city-button">Enter</button>
+            <span class="error"></span>
         </form>
         <div class="content">
-            <div class="weather info">
-                Weather
+            <div class="weather">
+                <h2 class="title">Weather</h2>
+                <div class="info">
+                    
+                </div>
             </div>
-            <div class="location info">
-                Location
+            <div class="location">
+                <h2 class="title">Location</h2>
+                <div class="info">
+
+                </div>
             </div>
         </div>
     </div>
