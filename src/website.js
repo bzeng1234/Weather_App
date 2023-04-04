@@ -16,9 +16,29 @@ export let website = () => {
             let req = request();
             req.makeRequest(city)
             .then(weather => {
-                console.log(weather.currWeather);
-                console.log(weather.location);
+                updateWeather(weather.currWeather);
+                updateLocation(weather.location);
             });
+        }
+    };
+
+    let updateWeather = (weather) => {
+        let weatherInfo = document.querySelector('.weather');
+
+        console.log(weather);
+        
+        for(let info in weather) {
+            weatherInfo.textContent += `${info}: ${weather[info]} \n`;
+        }
+    };
+
+    let updateLocation = (location) => {
+        let locationInfo = document.querySelector('.location');
+
+        console.log(location);
+        
+        for(let info in location) {
+            locationInfo.textContent += `${info}: ${location[info]} \n`;
         }
     };
 
